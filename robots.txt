@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://evanbecker.me/sitemap.xml
