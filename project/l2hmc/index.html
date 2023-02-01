@@ -1,4 +1,7 @@
-<!DOCTYPE html><html lang="en-us" >
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: February 1, 2023 --><html lang="en-us" >
+
 
 <head>
   <meta charset="utf-8" />
@@ -7,11 +10,214 @@
   
   
   
-    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
   
 
   
 
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.24595df0c2dd320a6929bb350c13027d.css" />
+
+  
+  
+  
+
+  
+  
   
   
   
@@ -19,298 +225,109 @@
   
     
     
-    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" disabled>
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" >
+  
+
   
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
 
   <meta name="author" content="Evan W. Becker" />
 
-  
-  
-  
-    
-  
-  <meta name="description" content="Analyzing the rotation invariance of the L2HMC Hamiltonian Monte Carlo sampler with neural network dynamics" />
-
-  
-  <link rel="alternate" hreflang="en-us" href="https://evanbecker.me/project/l2hmc/" />
-
-  
-
-
-
-
-
 
 
 
 
   
 
+<meta name="description" content="Analyzing the rotation invariance of the L2HMC Hamiltonian Monte Carlo sampler with neural network dynamics" />
 
 
 
-  
-  
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  
+<link rel="alternate" hreflang="en-us" href="https://evbecker.github.io/project/l2hmc/" />
+<link rel="canonical" href="https://evbecker.github.io/project/l2hmc/" />
 
-  
-  
-  
-    <meta name="theme-color" content="#707070" />
-  
 
-  
-  
-    
-    <script src="/js/mathjax-config.js"></script>
-  
 
-  
+  <link rel="manifest" href="/manifest.webmanifest" />
 
-  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
 
-  
-  
-  
-    
-    
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous" media="print" onload="this.media='all'">
-    
 
-    
-    
-    
-    
-      
-      
-    
-    
-    
+<link rel="icon" type="image/png" href="/media/icon_hu9d230ea63a194b55d9e6068e46b149b3_30806_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu9d230ea63a194b55d9e6068e46b149b3_30806_180x180_fill_lanczos_center_3.png" />
 
-    
-    
-    
-      
-    
-    
-      
-      
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
-        
-      
-    
+<meta name="theme-color" content="#bbdefb" />
 
-    
-    
-    
 
-    
 
-    
-    
-      
-      
 
-      
-      
 
-      
-    
-      
-      
 
-      
-      
 
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-  
-
-  
-  
-  
-    
-      
-      
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono&display=swap">
-      
-    
-  
-
-  
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/wowchemy.2c8e188f6be8823aea3cafaab55a3fa0.css" />
-
-  
 
 
 
   
 
-  
-
-  
 
 
 
 
-  
-  
-  
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://evbecker.github.io/project/l2hmc/featured.png" />
+<meta property="og:site_name" content="evbecker" />
+<meta property="og:url" content="https://evbecker.github.io/project/l2hmc/" />
+<meta property="og:title" content="Taking the L2HMC Sampler for a &#34;Spin&#34; | evbecker" />
+<meta property="og:description" content="Analyzing the rotation invariance of the L2HMC Hamiltonian Monte Carlo sampler with neural network dynamics" /><meta property="og:image" content="https://evbecker.github.io/project/l2hmc/featured.png" /><meta property="og:locale" content="en-us" />
 
   
-
-  
-    <link rel="manifest" href="/manifest.webmanifest" />
-  
-
-  <link rel="icon" type="image/png" href="/media/icon_hu9d230ea63a194b55d9e6068e46b149b3_30806_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu9d230ea63a194b55d9e6068e46b149b3_30806_180x180_fill_lanczos_center_3.png" />
-
-  <link rel="canonical" href="https://evanbecker.me/project/l2hmc/" />
-
+    <meta
+      property="article:published_time"
+      content="2021-04-27T00:00:00&#43;00:00"
+    />
   
   
-  
-  
-  
-  
-  
-  
-    
-  
-  
-  <meta property="twitter:card" content="summary_large_image" />
-  
-  <meta property="og:site_name" content="evbecker" />
-  <meta property="og:url" content="https://evanbecker.me/project/l2hmc/" />
-  <meta property="og:title" content="Taking the L2HMC Sampler for a &#34;Spin&#34; | evbecker" />
-  <meta property="og:description" content="Analyzing the rotation invariance of the L2HMC Hamiltonian Monte Carlo sampler with neural network dynamics" /><meta property="og:image" content="https://evanbecker.me/project/l2hmc/featured.png" />
-    <meta property="twitter:image" content="https://evanbecker.me/project/l2hmc/featured.png" /><meta property="og:locale" content="en-us" />
-  
-    
-      <meta
-        property="article:published_time"
-        content="2021-04-27T00:00:00&#43;00:00"
-      />
-    
     <meta property="article:modified_time" content="2021-04-27T00:00:00&#43;00:00">
   
 
-  
+
+
+
 
 
     
@@ -329,12 +346,12 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://evanbecker.me/project/l2hmc/"
+    "@id": "https://evbecker.github.io/project/l2hmc/"
   },
   "headline": "Taking the L2HMC Sampler for a \"Spin\"",
   
   "image": [
-    "https://evanbecker.me/project/l2hmc/featured.png"
+    "https://evbecker.github.io/project/l2hmc/featured.png"
   ],
   
   "datePublished": "2021-04-27T00:00:00Z",
@@ -350,7 +367,7 @@
     "name": "evbecker",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://evanbecker.me/media/icon_hu9d230ea63a194b55d9e6068e46b149b3_30806_192x192_fill_lanczos_center_3.png"
+      "url": "https://evbecker.github.io/media/icon_hu9d230ea63a194b55d9e6068e46b149b3_30806_192x192_fill_lanczos_center_3.png"
     }
   },
   "description": "Analyzing the rotation invariance of the L2HMC Hamiltonian Monte Carlo sampler with neural network dynamics"
@@ -361,19 +378,41 @@
 
   
 
+
+
+
+  
+  
+  
+
+  
   
 
   
 
 
-
-
-
+  
   <title>Taking the L2HMC Sampler for a &#34;Spin&#34; | evbecker</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="53fb7712658330ccc0ef666f7e15748b" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  dark " data-wc-page-id="53fb7712658330ccc0ef666f7e15748b" >
 
   
   
@@ -384,260 +423,216 @@
   
   
   
-  <script src="/js/wowchemy-init.min.8988fb2a4bba758785868cfcb5244555.js"></script>
+  <script src="/js/wowchemy-init.min.2a7b4dc7d7846171b6299e17e1f3ac71.js"></script>
 
   
 
 
-<aside class="search-modal" id="search">
-  <div class="container">
-    <section class="search-header">
 
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">evbecker</a>
       </div>
+      
 
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
-        aria-label="Search...">
-        
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">evbecker</a>
       </div>
-
-      
       
 
       
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
-
-
-
-  <div class="page-header">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container-xl">
-
-    
-    <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">evbecker</a>
-    </div>
-    
-
-    
-    <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-    <span><i class="fas fa-bars"></i></span>
-    </button>
-    
-
-    
-    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">evbecker</a>
-    </div>
-    
-
-    
-    
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
-
       
-      <ul class="navbar-nav d-md-inline-flex">
-        
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
 
         
-
-        
-        
-        
+        <ul class="navbar-nav d-md-inline-flex">
           
-        
 
-        
-
-        
-        
-        
-        
-
-        
           
-            
-            
+
+          
           
           
             
+          
+
+          
+
+          
+          
+          
+          
+
+          
             
-            
+              
               
             
             
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#about"><span>Home</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
+              
+              
+              
+                
+              
+              
             
-            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
           
           
             
+          
+
+          
+
+          
+          
+          
+          
+
+          
             
-            
+              
               
             
             
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#projects"><span>Projects</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
+              
+              
+              
+                
+              
+              
             
-            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
           
           
             
+          
+
+          
+
+          
+          
+          
+          
+
+          
             
-            
+              
               
             
             
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
           
         
 
-        <li class="nav-item">
-          <a class="nav-link " href="/#contact"><span>Contact</span></a>
-        </li>
+        
+        
+        
+
+        
+        
+        
 
         
         
 
-      
-
-        
       </ul>
+
     </div>
-
-    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-
-      
-      
-        
-      
-
-      
-      
-      <li class="nav-item">
-        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
-      </li>
-      
-
-      
-      
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
-          <i class="fas fa-moon" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>Light</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>Dark</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>Automatic</span>
-          </a>
-        </div>
-      </li>
-      
-
-      
-      
-
-    </ul>
-
-  </div>
-</nav>
+  </nav>
+</header>
 
 
   </div>
 
   <div class="page-body">
+    
+    
+    
+
     <article class="article article-project">
 
   
+
+
 
 
 
@@ -689,8 +684,6 @@
 
   
 
-  
-  
   
   
   
@@ -753,7 +746,7 @@
 
 <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 386px; max-height: 262px;">
   <div style="position: relative">
-    <img src="/project/l2hmc/featured.png" alt="" class="featured-image">
+    <img src="/project/l2hmc/featured_hueb72b700c6180a15fd0f4294f1ed41fb_24444_720x2500_fit_q75_h2_lanczos_3.webp" width="386" height="262" alt="" class="featured-image">
     <span class="article-header-caption">Autocorrelation Plots of a trained sampler on rotated guassian distributions</span>
   </div>
 </div>
@@ -767,15 +760,17 @@
 <p>Finding sampling algorithms that can efficiently cover ill-conditioned distributions is a difficult challenge, even for popular methods such as Hamiltonian Monte Carlo. Recently, the L2HMC method demonstrated low autocorrelation and high expected sample size over various ill-conditioned energy landscapes (Levy et al. 2018). By training deep neural networks to maximize the expected squared jump distance, the MCMC kernel can more efficiently explore the distribution. While promising, the initial training time of their sampler is not accounted for and could pose problems in practice when applying L2HMC to new distributions. In this project, I set out to analyze the training time and performance of different neural networks on strongly correlated gaussian distributions. I also examine whether one L2HMC sampler can be used to sample from multiple similar distributions.</p>
 <h2 id="background">Background</h2>
 <h3 id="hamiltonian-monte-carlo">Hamiltonian Monte Carlo</h3>
-<p>Hamiltonian Monte Carlo (HMC) is a type of Markov Chain Monte Carlo (MCMC) algorithm where new states are proposed through Hamiltonian dynamics (Neal 2012). Given that we can write our target distribution as a function of an energy distribution $p(x) \propto \exp(-U(x))$, we can approximate hamiltonian dynamics to explore this distribution using a series of leapfrog updates as follows:
+<p>Hamiltonian Monte Carlo (HMC) is a type of Markov Chain Monte Carlo (MCMC) algorithm where new states are proposed through Hamiltonian dynamics (Neal 2012). Given that we can write our target distribution as a function of an energy distribution 
+
+$p(x) \propto \exp(-U(x))$, we can approximate hamiltonian dynamics to explore this distribution using a series of leapfrog updates as follows:
 \begin{equation}
-v^{\frac{1}{2}} = v - \frac{\epsilon}{2}\partial_x U(x); \quad x' = x+\epsilon v^{\frac{1}{2}}; \quad v' =v-\frac{\epsilon}{2} \partial_x U(x').
+v^{\frac{1}{2}} = v - \frac{\epsilon}{2}\partial_x U(x); \quad x&rsquo; = x+\epsilon v^{\frac{1}{2}}; \quad v&rsquo; =v-\frac{\epsilon}{2} \partial_x U(x&rsquo;).
 \end{equation}</p>
 <h3 id="l2hmc-algorithm">L2HMC Algorithm</h3>
 <p>The Learning to Hamiltonian Monte Carlo (L2HMC) algorithm modifies the HMC dynamics using trained neural networks (Levy et al. 2018). The usual leapfrog update steps are modified by scaling functions S,Q,T. The function S scales the current position or momentum, the function Q scales the derivative, and the function T translates the new position or momentum vector. Levy et al. showed that these dynamics have tractible determinants of the jacobian and preserves the properties of a markov chain, while efficiently exploring the distribution it was trained on.</p>
 <p>The way the sampler increases its efficiency is by training these dynamics functions to maximize the expected squared jump distance. The expected squared jump distance from one state vector $\xi$ can be written in the form of equation below.
 \begin{equation}
-ESJD := \sum_{\xi'} P(\xi'|\xi)\lVert \xi_x-\xi_x' \rVert_2^2
+ESJD := \sum_{\xi&rsquo;} P(\xi&rsquo;|\xi)\lVert \xi_x-\xi_x&rsquo; \rVert_2^2
 \end{equation}</p>
 <p>Here $\xi_x$ denotes the position subcomponent of the full state vector.</p>
 <p>The standard architecture for each network of the L2HMC sampler (for position and momentum updates) used by Levy et al. is defined as follows: Position, velocity, and time step of the sampler serve as the input variables. This input is sent through two fully connected (ReLU activation) layers using hidden layer width of 10 for most energy functions, and 100 for the 50-dimensional ill conditioned gaussian (ICG). The output from this step is fed separately into the final translation/scaling layers, S,Q,T. The networks were trained for 5,000 iterations.</p>
@@ -799,27 +794,32 @@ ESJD := \sum_{\xi'} P(\xi'|\xi)\lVert \xi_x-\xi_x' \rVert_2^2
 
 
 
+
+
+
+
 <figure  id="figure-rotated-gaussians">
   <div class="d-flex justify-content-center">
     <div class="w-100" ><img alt="Strongly correlated gaussians offset 30 degrees from one another. We consider the blue distribution to be the original (0 degree rotation)" srcset="
-               /project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_e0160bab6a8afb5c70ff86657f3e18f7.png 400w,
-               /project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_cfbeab75a421b3b5e6053a8646f3f6cd.png 760w,
-               /project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_1200x1200_fit_lanczos_3.png 1200w"
-               src="/project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_e0160bab6a8afb5c70ff86657f3e18f7.png"
+               /project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_b5bba3ba4a612ba49dbd459b3113d40c.webp 400w,
+               /project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_bec6ff9d6ed3feba47b9c8301664e2f6.webp 760w,
+               /project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_b5bba3ba4a612ba49dbd459b3113d40c.webp"
                width="377"
                height="264"
                loading="lazy" data-zoomable /></div>
   </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
       Strongly correlated gaussians offset 30 degrees from one another. We consider the blue distribution to be the original (0 degree rotation)
     </figcaption></figure>
+
 <p>We first determine how well a sampler trained on our original SCG performs on rotated distributions of increasing degree. By estimating at what point the sampler&rsquo;s performance drops off, we can get a sense of its &ldquo;operational range&rdquo;. Most likely the limits determined here in the low dimensional setting upper bound those in the high dimensional setting, as many small differences in angle would result in large overall distances between distributions.</p>
 <p>We finally make an attempt to train our sampler on multiple distributions in an effort to further generalize its performance. After a certain number training iterations we swap out the energy function of our sampler, switching between 5 SCG&rsquo;s each rotated by 30 degrees. We also try a less extreme augmentations, switching between 5 SCG&rsquo;s rotated by a smaller degree. We first measure our performance on one of the training distributions, and then a new test distribution (still within the training rotation range).</p>
 <h2 id="results">Results</h2>
 <h3 id="network-width-1">Network Width</h3>
-<p>We first provide comparisons of our training and performance data for different network sizes. In <a href="#figure-loss-width-comparison">figure 2</a>, one can see that the loss for networks size 10 and 20 seem to plateau at around -8,000, while the smaller network of size 5 seems to have not yet reached a minima. While harder to interpret than something like the MSE loss (which is at best 0), our version of the expected squared jump distance loss can be roughly lower bounded in our toy example by bounding the maximum &ldquo;width&rdquo; of our distribution (more robustly one might consider something like gaussian complexity or a concentration bound on the difference between two independent samples from our distribution). We note that as our expected squared jump distance grows larger the second term in equation \ref{eq:loss} dominates. 
+<p>We first provide comparisons of our training and performance data for different network sizes. In <a href="#figure-loss-width-comparison">figure 2</a>, one can see that the loss for networks size 10 and 20 seem to plateau at around -8,000, while the smaller network of size 5 seems to have not yet reached a minima. While harder to interpret than something like the MSE loss (which is at best 0), our version of the expected squared jump distance loss can be roughly lower bounded in our toy example by bounding the maximum &ldquo;width&rdquo; of our distribution (more robustly one might consider something like gaussian complexity or a concentration bound on the difference between two independent samples from our distribution). We note that as our expected squared jump distance grows larger the second term in equation \ref{eq:loss} dominates.
 \begin{equation}
 \label{eq:loss}
-\ell_{\lambda} (\xi, \xi', A(\xi'|\xi)) = \frac{\lambda^2}{\delta(\xi,\xi')A(\xi,\xi')} -\frac{\delta(\xi,\xi')A(\xi,\xi')}{\lambda^2}
+\ell_{\lambda} (\xi, \xi&rsquo;, A(\xi&rsquo;|\xi)) = \frac{\lambda^2}{\delta(\xi,\xi&rsquo;)A(\xi,\xi&rsquo;)} -\frac{\delta(\xi,\xi&rsquo;)A(\xi,\xi&rsquo;)}{\lambda^2}
 \end{equation}
 If we consider coordinates (-20,20) to (20,-20) to be the &ldquo;endpoints&rdquo; of our distribution measurement, and using a scale parameter of $\lambda^2 = 0.1$, we can bound our loss as:
 \begin{equation}
@@ -840,13 +840,17 @@ This lower bound seems to align with empirical results. We can further check whe
 
 
 
+
+
+
+
 <figure  id="figure-loss-width-comparison">
   <div class="d-flex justify-content-center">
     <div class="w-100" ><img alt="History of loss" srcset="
-               /project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_12417b7b7bad9bc24db7f6eedede1e17.png 400w,
-               /project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_8e4ad4a1717d0245a24dcf5161aa787d.png 760w,
-               /project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_1200x1200_fit_lanczos_3.png 1200w"
-               src="/project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_12417b7b7bad9bc24db7f6eedede1e17.png"
+               /project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_023b8445e54ec022556f204139c500fb.webp 400w,
+               /project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_dede1cf3ac862363d5f0c4ab457ad747.webp 760w,
+               /project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_023b8445e54ec022556f204139c500fb.webp"
                width="420"
                height="262"
                loading="lazy" data-zoomable /></div>
@@ -867,20 +871,30 @@ This lower bound seems to align with empirical results. We can further check whe
 
 
 
+
+
+
+
+
 <figure  id="figure-acceptance-width-comparison">
   <div class="d-flex justify-content-center">
     <div class="w-100" ><img alt="Acceptance probability while training" srcset="
-               /project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_1f46bdf32708662f36959d4442eca844.png 400w,
-               /project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_e0b753ec3b3d8d8c4a05bbff12e1ec03.png 760w,
-               /project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_1200x1200_fit_lanczos_3.png 1200w"
-               src="/project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_1f46bdf32708662f36959d4442eca844.png"
+               /project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_54eef4a2fae2bdd9456e5e738cbd8ef5.webp 400w,
+               /project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_c37c05686b6e84079fee050583dff0e5.webp 760w,
+               /project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_54eef4a2fae2bdd9456e5e738cbd8ef5.webp"
                width="396"
                height="262"
                loading="lazy" data-zoomable /></div>
   </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
       Acceptance probability while training
     </figcaption></figure>
+
 <p>Next we compare the fully trained sampler performances. Looking at figure <a href="#figure-acl-width-comparison">figure 4</a>, we see that both 10-width and 20-width networks have almost negligible autocorrelation within a hundred gradient computations (10 samples), while the 5-width sampler takes an order of magnitude more (100 samples) to reach the same level. This performance gap is reflected in the ESS as well, with the 20-width sampler beating the 5-width by a factor of 10, and the 10-width by a factor of 2. Interestingly, both training and sampling times are roughly comparable between all three samplers. This may be because of the slight variation in allocated resources of the Google Colab platform, but is most likely a result of the lower dimensional problem setting. One might expect that for higher dimensional problems changes in network width would result in many more computations per training iteration. Most important to note however is that training time takes an order of magnitude longer than sample time (for approximately the same number of iterations). This means that one can&rsquo;t ignore training time when calculating ESS per time unless the number of samples being considered is much larger than what it takes to train the sampler. Even worse, since this training time most likely grows with the complexity of the distribution (while the number of samples needed remains relatively constant) the training time factor may begin to dominate when calculting total ESS per time.</p>
+
+
+
+
 
 
 
@@ -898,16 +912,17 @@ This lower bound seems to align with empirical results. We can further check whe
 <figure  id="figure-acl-width-comparison">
   <div class="d-flex justify-content-center">
     <div class="w-100" ><img alt="Autocorrelation for networks of different widths" srcset="
-               /project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_a2f5f01fc4681a42e42bb245596af57c.png 400w,
-               /project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_84cef462722e5a09944c0c1df6e36ed1.png 760w,
-               /project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_1200x1200_fit_lanczos_3.png 1200w"
-               src="/project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_a2f5f01fc4681a42e42bb245596af57c.png"
+               /project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_02ed4f964289d9cd61205d73db3e2a1f.webp 400w,
+               /project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_697bfaf252b33309340e4ba9fc2eed3c.webp 760w,
+               /project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_02ed4f964289d9cd61205d73db3e2a1f.webp"
                width="386"
                height="262"
                loading="lazy" data-zoomable /></div>
   </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
       Autocorrelation for networks of different widths
     </figcaption></figure>
+
 <table>
 <thead>
 <tr>
@@ -954,13 +969,17 @@ This lower bound seems to align with empirical results. We can further check whe
 
 
 
+
+
+
+
 <figure  id="figure-acl-rotation-invariance-width10">
   <div class="d-flex justify-content-center">
     <div class="w-100" ><img alt="Autocorrelation  for  the  width-10L2HMC sampler tested on rotated distri-butions" srcset="
-               /project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_f927a5dae75b187fe2f67a1ee7285595.png 400w,
-               /project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_5792f4e310aad205b186eb934b6b4cfd.png 760w,
-               /project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_1200x1200_fit_lanczos_3.png 1200w"
-               src="/project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_f927a5dae75b187fe2f67a1ee7285595.png"
+               /project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_915dadb1280f5cfff9bfe1a40d0547fd.webp 400w,
+               /project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_b9e75a1879d43c05108f5f9a4f72c393.webp 760w,
+               /project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_915dadb1280f5cfff9bfe1a40d0547fd.webp"
                width="386"
                height="262"
                loading="lazy" data-zoomable /></div>
@@ -981,19 +1000,29 @@ This lower bound seems to align with empirical results. We can further check whe
 
 
 
+
+
+
+
+
 <figure  id="figure-samples-degree6-width10">
   <div class="d-flex justify-content-center">
     <div class="w-100" ><img alt="Plotting a single chain (yellow) ofour L2HMC width-10 sampler for 50timesteps on a 6 degree rotated distribu-tion" srcset="
-               /project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_c94b5085e1ba7e90b620734b15399638.png 400w,
-               /project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_05f31c4fc96b064c397109d64b67aaa8.png 760w,
-               /project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_1200x1200_fit_lanczos_3.png 1200w"
-               src="/project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_c94b5085e1ba7e90b620734b15399638.png"
+               /project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_dd86a967dc43956b592a71d2dc2f150e.webp 400w,
+               /project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_ab83be7643ae1206b6d10f85f25bb151.webp 760w,
+               /project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_dd86a967dc43956b592a71d2dc2f150e.webp"
                width="377"
                height="248"
                loading="lazy" data-zoomable /></div>
   </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
       Plotting a single chain (yellow) ofour L2HMC width-10 sampler for 50timesteps on a 6 degree rotated distribu-tion
-    </figcaption></figure></p>
+    </figcaption></figure>
+</p>
+
+
+
+
 
 
 
@@ -1011,16 +1040,17 @@ This lower bound seems to align with empirical results. We can further check whe
 <figure  id="figure-acl-rotation-invariance-width20">
   <div class="d-flex justify-content-center">
     <div class="w-100" ><img alt="Autocorrelation  for  the  width-20L2HMC sampler tested on rotated distri-butions" srcset="
-               /project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_67ddfb1237f748596ddb1395c83aa596.png 400w,
-               /project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_f21ef3454e2f130f178bf942fda1851f.png 760w,
-               /project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_1200x1200_fit_lanczos_3.png 1200w"
-               src="/project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_67ddfb1237f748596ddb1395c83aa596.png"
+               /project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_a40675d10c8ffc9799fd79205ea039a6.webp 400w,
+               /project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_b932ea94480d427034dc1f00e17fe0c0.webp 760w,
+               /project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_a40675d10c8ffc9799fd79205ea039a6.webp"
                width="386"
                height="262"
                loading="lazy" data-zoomable /></div>
   </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
       Autocorrelation  for  the  width-20L2HMC sampler tested on rotated distri-butions
     </figcaption></figure>
+
 <p>As we increase the width and expressivity of our network, we see our operating range actually decreases (<a href="#figure-acl-rotation-invariance-width20">figure 7</a>).  The autocorrelation of the width-20 sampler tested on the 8 degree rotated distribution is much worse than earlier, and is still not negligible after 300 samples. We include in table 2 the full list of expected sample size of samplers tested on the rotated distributions, where we see this trend continues.</p>
 <table>
 <thead>
@@ -1074,7 +1104,6 @@ Regardless, we can conclude from this experiment that the base L2HMC sampler is 
 
 
 
-
 <div class="article-tags">
   
   <a class="badge badge-light" href="/tag/statistics/">Statistics</a>
@@ -1085,7 +1114,7 @@ Regardless, we can conclude from this experiment that the base L2HMC sampler is 
 
 
 
-<div class="share-box" aria-hidden="true">
+<div class="share-box">
   <ul class="share">
     
       
@@ -1095,8 +1124,12 @@ Regardless, we can conclude from this experiment that the base L2HMC sampler is 
       
       
       
+      
+      
+      
+      
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://evanbecker.me/project/l2hmc/&amp;text=Taking%20the%20L2HMC%20Sampler%20for%20a%20&amp;#34;Spin&amp;#34;" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fevbecker.github.io%2Fproject%2Fl2hmc%2F&amp;text=Taking&#43;the&#43;L2HMC&#43;Sampler&#43;for&#43;a&#43;%22Spin%22" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -1108,8 +1141,12 @@ Regardless, we can conclude from this experiment that the base L2HMC sampler is 
       
       
       
+      
+      
+      
+      
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://evanbecker.me/project/l2hmc/&amp;t=Taking%20the%20L2HMC%20Sampler%20for%20a%20&amp;#34;Spin&amp;#34;" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fevbecker.github.io%2Fproject%2Fl2hmc%2F&amp;t=Taking&#43;the&#43;L2HMC&#43;Sampler&#43;for&#43;a&#43;%22Spin%22" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1121,8 +1158,14 @@ Regardless, we can conclude from this experiment that the base L2HMC sampler is 
       
       
       
+      
+      
+      
+      
+        
+      
       <li>
-        <a href="mailto:?subject=Taking%20the%20L2HMC%20Sampler%20for%20a%20&amp;#34;Spin&amp;#34;&amp;body=https://evanbecker.me/project/l2hmc/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Taking%20the%20L2HMC%20Sampler%20for%20a%20%22Spin%22&amp;body=https%3A%2F%2Fevbecker.github.io%2Fproject%2Fl2hmc%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1134,8 +1177,12 @@ Regardless, we can conclude from this experiment that the base L2HMC sampler is 
       
       
       
+      
+      
+      
+      
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://evanbecker.me/project/l2hmc/&amp;title=Taking%20the%20L2HMC%20Sampler%20for%20a%20&amp;#34;Spin&amp;#34;" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fevbecker.github.io%2Fproject%2Fl2hmc%2F&amp;title=Taking&#43;the&#43;L2HMC&#43;Sampler&#43;for&#43;a&#43;%22Spin%22" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1147,8 +1194,12 @@ Regardless, we can conclude from this experiment that the base L2HMC sampler is 
       
       
       
+      
+      
+      
+      
       <li>
-        <a href="whatsapp://send?text=Taking%20the%20L2HMC%20Sampler%20for%20a%20&amp;#34;Spin&amp;#34;%20https://evanbecker.me/project/l2hmc/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Taking&#43;the&#43;L2HMC&#43;Sampler&#43;for&#43;a&#43;%22Spin%22%20https%3A%2F%2Fevbecker.github.io%2Fproject%2Fl2hmc%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1160,8 +1211,12 @@ Regardless, we can conclude from this experiment that the base L2HMC sampler is 
       
       
       
+      
+      
+      
+      
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://evanbecker.me/project/l2hmc/&amp;title=Taking%20the%20L2HMC%20Sampler%20for%20a%20&amp;#34;Spin&amp;#34;" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fevbecker.github.io%2Fproject%2Fl2hmc%2F&amp;title=Taking&#43;the&#43;L2HMC&#43;Sampler&#43;for&#43;a&#43;%22Spin%22" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1194,11 +1249,11 @@ Regardless, we can conclude from this experiment that the base L2HMC sampler is 
   <div class="media author-card content-widget-hr">
     
       
-      <a href="https://evanbecker.me/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hudd8906c828a66c6f351c9a5e2ac8565b_1342146_270x270_fill_q75_lanczos_center.jpg" alt="Evan W. Becker"></a>
+      <a href="https://evbecker.github.io"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hudd8906c828a66c6f351c9a5e2ac8565b_1342146_270x270_fill_q75_lanczos_center.jpg" alt="Evan W. Becker"></a>
     
 
     <div class="media-body">
-      <h5 class="card-title"><a href="https://evanbecker.me/">Evan W. Becker</a></h5>
+      <h5 class="card-title"><a href="https://evbecker.github.io">Evan W. Becker</a></h5>
       <h6 class="card-subtitle">PhD Student in Computer Science</h6>
       
       <ul class="network-icon" aria-hidden="true">
@@ -1291,20 +1346,6 @@ Regardless, we can conclude from this experiment that the base L2HMC sampler is 
 
 
 
-  
-  
-  <div class="article-widget content-widget-hr">
-    <h3>Related</h3>
-    <ul>
-      
-      <li><a href="/project/kernelgan/">Coming Soon!</a></li>
-      
-    </ul>
-  </div>
-  
-
-
-
 
 
     <div class="project-related-pages content-widget-hr">
@@ -1337,25 +1378,40 @@ Regardless, we can conclude from this experiment that the base L2HMC sampler is 
 
 
 
+
+
+
+
+
+
+
+
+
   
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 
-  
+
+
+
+
   <p class="powered-by">
-    © 2021 Evan Becker
-  </p>
-  
-
-  
-  
-
-
-
-
-
-
-  <p class="powered-by">
     
     
     
@@ -1365,7 +1421,7 @@ Regardless, we can conclude from this experiment that the base L2HMC sampler is 
       
       
       
-      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
     
   </p>
 </footer>
@@ -1373,6 +1429,73 @@ Regardless, we can conclude from this experiment that the base L2HMC sampler is 
     </div>
     
   </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+<script src="/en/js/wowchemy.min.cac6f31121e70d7b5e433048bdeb0af6.js"></script>
+
+
+
+
+
+
 
   
 <div id="modal" class="modal fade" role="dialog">
@@ -1385,7 +1508,8 @@ Regardless, we can conclude from this experiment that the base L2HMC sampler is 
         </button>
       </div>
       <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
+        
+        <pre><code></code></pre>
       </div>
       <div class="modal-footer">
         <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
@@ -1400,98 +1524,20 @@ Regardless, we can conclude from this experiment that the base L2HMC sampler is 
   </div>
 </div>
 
-      
 
-    
-    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
 
-    
-    
-    
-      
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      
 
-      
-      
 
-      
 
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
-        
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" crossorigin="anonymous"></script>
-        
-      
 
-    
 
-    
-    
-    
 
-    
-    
 
-    
-    
-    
-      
-      <script id="search-hit-fuse-template" type="text/x-template">
-        <div class="search-hit" id="summary-{{key}}">
-          <div class="search-hit-content">
-            <div class="search-hit-name">
-              <a href="{{relpermalink}}">{{title}}</a>
-              <div class="article-metadata search-hit-type">{{type}}</div>
-              <p class="search-hit-description">{{snippet}}</p>
-            </div>
-          </div>
-        </div>
-      </script>
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-      
-    
 
-    
-    
 
-    
-    
-    
-    
 
-    
-    
-      
-      
-      
-      
-      
-      
-      
-    
 
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-    
-    
-    <script src="/en/js/wowchemy.min.d68ecd57c0ec1f1f61d65fd568f1c3a0.js"></script>
-
-    
 
 
 

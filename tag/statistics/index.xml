@@ -2,34 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Statistics | evbecker</title>
-    <link>https://evanbecker.me/tag/statistics/</link>
-      <atom:link href="https://evanbecker.me/tag/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://evbecker.github.io/tag/statistics/</link>
+      <atom:link href="https://evbecker.github.io/tag/statistics/index.xml" rel="self" type="application/rss+xml" />
     <description>Statistics</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Evan Becker</copyright><lastBuildDate>Tue, 27 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2023 Evan Becker</copyright><lastBuildDate>Tue, 27 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://evanbecker.me/media/icon_hu9d230ea63a194b55d9e6068e46b149b3_30806_512x512_fill_lanczos_center_3.png</url>
+      <url>https://evbecker.github.io/media/icon_hu9d230ea63a194b55d9e6068e46b149b3_30806_512x512_fill_lanczos_center_3.png</url>
       <title>Statistics</title>
-      <link>https://evanbecker.me/tag/statistics/</link>
+      <link>https://evbecker.github.io/tag/statistics/</link>
     </image>
     
     <item>
       <title>Taking the L2HMC Sampler for a &#34;Spin&#34;</title>
-      <link>https://evanbecker.me/project/l2hmc/</link>
+      <link>https://evbecker.github.io/project/l2hmc/</link>
       <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://evanbecker.me/project/l2hmc/</guid>
+      <guid>https://evbecker.github.io/project/l2hmc/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Finding sampling algorithms that can efficiently cover ill-conditioned distributions is a difficult challenge, even for popular methods such as Hamiltonian Monte Carlo. Recently, the L2HMC method demonstrated low autocorrelation and high expected sample size over various ill-conditioned energy landscapes (Levy et al. 2018). By training deep neural networks to maximize the expected squared jump distance, the MCMC kernel can more efficiently explore the distribution. While promising, the initial training time of their sampler is not accounted for and could pose problems in practice when applying L2HMC to new distributions. In this project, I set out to analyze the training time and performance of different neural networks on strongly correlated gaussian distributions. I also examine whether one L2HMC sampler can be used to sample from multiple similar distributions.&lt;/p&gt;
 &lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
 &lt;h3 id=&#34;hamiltonian-monte-carlo&#34;&gt;Hamiltonian Monte Carlo&lt;/h3&gt;
-&lt;p&gt;Hamiltonian Monte Carlo (HMC) is a type of Markov Chain Monte Carlo (MCMC) algorithm where new states are proposed through Hamiltonian dynamics (Neal 2012). Given that we can write our target distribution as a function of an energy distribution $p(x) \propto \exp(-U(x))$, we can approximate hamiltonian dynamics to explore this distribution using a series of leapfrog updates as follows:
+&lt;p&gt;Hamiltonian Monte Carlo (HMC) is a type of Markov Chain Monte Carlo (MCMC) algorithm where new states are proposed through Hamiltonian dynamics (Neal 2012). Given that we can write our target distribution as a function of an energy distribution 
+
+$p(x) \propto \exp(-U(x))$, we can approximate hamiltonian dynamics to explore this distribution using a series of leapfrog updates as follows:
 \begin{equation}
-v^{\frac{1}{2}} = v - \frac{\epsilon}{2}\partial_x U(x); \quad x&#39; = x+\epsilon v^{\frac{1}{2}}; \quad v&#39; =v-\frac{\epsilon}{2} \partial_x U(x&#39;).
+v^{\frac{1}{2}} = v - \frac{\epsilon}{2}\partial_x U(x); \quad x&amp;rsquo; = x+\epsilon v^{\frac{1}{2}}; \quad v&amp;rsquo; =v-\frac{\epsilon}{2} \partial_x U(x&amp;rsquo;).
 \end{equation}&lt;/p&gt;
 &lt;h3 id=&#34;l2hmc-algorithm&#34;&gt;L2HMC Algorithm&lt;/h3&gt;
 &lt;p&gt;The Learning to Hamiltonian Monte Carlo (L2HMC) algorithm modifies the HMC dynamics using trained neural networks (Levy et al. 2018). The usual leapfrog update steps are modified by scaling functions S,Q,T. The function S scales the current position or momentum, the function Q scales the derivative, and the function T translates the new position or momentum vector. Levy et al. showed that these dynamics have tractible determinants of the jacobian and preserves the properties of a markov chain, while efficiently exploring the distribution it was trained on.&lt;/p&gt;
 &lt;p&gt;The way the sampler increases its efficiency is by training these dynamics functions to maximize the expected squared jump distance. The expected squared jump distance from one state vector $\xi$ can be written in the form of equation below.
 \begin{equation}
-ESJD := \sum_{\xi&#39;} P(\xi&#39;|\xi)\lVert \xi_x-\xi_x&#39; \rVert_2^2
+ESJD := \sum_{\xi&amp;rsquo;} P(\xi&amp;rsquo;|\xi)\lVert \xi_x-\xi_x&amp;rsquo; \rVert_2^2
 \end{equation}&lt;/p&gt;
 &lt;p&gt;Here $\xi_x$ denotes the position subcomponent of the full state vector.&lt;/p&gt;
 &lt;p&gt;The standard architecture for each network of the L2HMC sampler (for position and momentum updates) used by Levy et al. is defined as follows: Position, velocity, and time step of the sampler serve as the input variables. This input is sent through two fully connected (ReLU activation) layers using hidden layer width of 10 for most energy functions, and 100 for the 50-dimensional ill conditioned gaussian (ICG). The output from this step is fed separately into the final translation/scaling layers, S,Q,T. The networks were trained for 5,000 iterations.&lt;/p&gt;
@@ -53,27 +55,32 @@ ESJD := \sum_{\xi&#39;} P(\xi&#39;|\xi)\lVert \xi_x-\xi_x&#39; \rVert_2^2
 
 
 
+
+
+
+
 &lt;figure  id=&#34;figure-rotated-gaussians&#34;&gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Strongly correlated gaussians offset 30 degrees from one another. We consider the blue distribution to be the original (0 degree rotation)&#34; srcset=&#34;
-               /project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_e0160bab6a8afb5c70ff86657f3e18f7.png 400w,
-               /project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_cfbeab75a421b3b5e6053a8646f3f6cd.png 760w,
-               /project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://evanbecker.me/project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_e0160bab6a8afb5c70ff86657f3e18f7.png&#34;
+               /project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_b5bba3ba4a612ba49dbd459b3113d40c.webp 400w,
+               /project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_bec6ff9d6ed3feba47b9c8301664e2f6.webp 760w,
+               /project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://evbecker.github.io/project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_b5bba3ba4a612ba49dbd459b3113d40c.webp&#34;
                width=&#34;377&#34;
                height=&#34;264&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
       Strongly correlated gaussians offset 30 degrees from one another. We consider the blue distribution to be the original (0 degree rotation)
     &lt;/figcaption&gt;&lt;/figure&gt;
+
 &lt;p&gt;We first determine how well a sampler trained on our original SCG performs on rotated distributions of increasing degree. By estimating at what point the sampler&amp;rsquo;s performance drops off, we can get a sense of its &amp;ldquo;operational range&amp;rdquo;. Most likely the limits determined here in the low dimensional setting upper bound those in the high dimensional setting, as many small differences in angle would result in large overall distances between distributions.&lt;/p&gt;
 &lt;p&gt;We finally make an attempt to train our sampler on multiple distributions in an effort to further generalize its performance. After a certain number training iterations we swap out the energy function of our sampler, switching between 5 SCG&amp;rsquo;s each rotated by 30 degrees. We also try a less extreme augmentations, switching between 5 SCG&amp;rsquo;s rotated by a smaller degree. We first measure our performance on one of the training distributions, and then a new test distribution (still within the training rotation range).&lt;/p&gt;
 &lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
 &lt;h3 id=&#34;network-width-1&#34;&gt;Network Width&lt;/h3&gt;
-&lt;p&gt;We first provide comparisons of our training and performance data for different network sizes. In &lt;a href=&#34;#figure-loss-width-comparison&#34;&gt;figure 2&lt;/a&gt;, one can see that the loss for networks size 10 and 20 seem to plateau at around -8,000, while the smaller network of size 5 seems to have not yet reached a minima. While harder to interpret than something like the MSE loss (which is at best 0), our version of the expected squared jump distance loss can be roughly lower bounded in our toy example by bounding the maximum &amp;ldquo;width&amp;rdquo; of our distribution (more robustly one might consider something like gaussian complexity or a concentration bound on the difference between two independent samples from our distribution). We note that as our expected squared jump distance grows larger the second term in equation \ref{eq:loss} dominates. 
+&lt;p&gt;We first provide comparisons of our training and performance data for different network sizes. In &lt;a href=&#34;#figure-loss-width-comparison&#34;&gt;figure 2&lt;/a&gt;, one can see that the loss for networks size 10 and 20 seem to plateau at around -8,000, while the smaller network of size 5 seems to have not yet reached a minima. While harder to interpret than something like the MSE loss (which is at best 0), our version of the expected squared jump distance loss can be roughly lower bounded in our toy example by bounding the maximum &amp;ldquo;width&amp;rdquo; of our distribution (more robustly one might consider something like gaussian complexity or a concentration bound on the difference between two independent samples from our distribution). We note that as our expected squared jump distance grows larger the second term in equation \ref{eq:loss} dominates.
 \begin{equation}
 \label{eq:loss}
-\ell_{\lambda} (\xi, \xi&#39;, A(\xi&#39;|\xi)) = \frac{\lambda^2}{\delta(\xi,\xi&#39;)A(\xi,\xi&#39;)} -\frac{\delta(\xi,\xi&#39;)A(\xi,\xi&#39;)}{\lambda^2}
+\ell_{\lambda} (\xi, \xi&amp;rsquo;, A(\xi&amp;rsquo;|\xi)) = \frac{\lambda^2}{\delta(\xi,\xi&amp;rsquo;)A(\xi,\xi&amp;rsquo;)} -\frac{\delta(\xi,\xi&amp;rsquo;)A(\xi,\xi&amp;rsquo;)}{\lambda^2}
 \end{equation}
 If we consider coordinates (-20,20) to (20,-20) to be the &amp;ldquo;endpoints&amp;rdquo; of our distribution measurement, and using a scale parameter of $\lambda^2 = 0.1$, we can bound our loss as:
 \begin{equation}
@@ -94,13 +101,17 @@ This lower bound seems to align with empirical results. We can further check whe
 
 
 
+
+
+
+
 &lt;figure  id=&#34;figure-loss-width-comparison&#34;&gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;History of loss&#34; srcset=&#34;
-               /project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_12417b7b7bad9bc24db7f6eedede1e17.png 400w,
-               /project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_8e4ad4a1717d0245a24dcf5161aa787d.png 760w,
-               /project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://evanbecker.me/project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_12417b7b7bad9bc24db7f6eedede1e17.png&#34;
+               /project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_023b8445e54ec022556f204139c500fb.webp 400w,
+               /project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_dede1cf3ac862363d5f0c4ab457ad747.webp 760w,
+               /project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://evbecker.github.io/project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_023b8445e54ec022556f204139c500fb.webp&#34;
                width=&#34;420&#34;
                height=&#34;262&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -121,20 +132,30 @@ This lower bound seems to align with empirical results. We can further check whe
 
 
 
+
+
+
+
+
 &lt;figure  id=&#34;figure-acceptance-width-comparison&#34;&gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Acceptance probability while training&#34; srcset=&#34;
-               /project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_1f46bdf32708662f36959d4442eca844.png 400w,
-               /project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_e0b753ec3b3d8d8c4a05bbff12e1ec03.png 760w,
-               /project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://evanbecker.me/project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_1f46bdf32708662f36959d4442eca844.png&#34;
+               /project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_54eef4a2fae2bdd9456e5e738cbd8ef5.webp 400w,
+               /project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_c37c05686b6e84079fee050583dff0e5.webp 760w,
+               /project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://evbecker.github.io/project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_54eef4a2fae2bdd9456e5e738cbd8ef5.webp&#34;
                width=&#34;396&#34;
                height=&#34;262&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
       Acceptance probability while training
     &lt;/figcaption&gt;&lt;/figure&gt;
+
 &lt;p&gt;Next we compare the fully trained sampler performances. Looking at figure &lt;a href=&#34;#figure-acl-width-comparison&#34;&gt;figure 4&lt;/a&gt;, we see that both 10-width and 20-width networks have almost negligible autocorrelation within a hundred gradient computations (10 samples), while the 5-width sampler takes an order of magnitude more (100 samples) to reach the same level. This performance gap is reflected in the ESS as well, with the 20-width sampler beating the 5-width by a factor of 10, and the 10-width by a factor of 2. Interestingly, both training and sampling times are roughly comparable between all three samplers. This may be because of the slight variation in allocated resources of the Google Colab platform, but is most likely a result of the lower dimensional problem setting. One might expect that for higher dimensional problems changes in network width would result in many more computations per training iteration. Most important to note however is that training time takes an order of magnitude longer than sample time (for approximately the same number of iterations). This means that one can&amp;rsquo;t ignore training time when calculating ESS per time unless the number of samples being considered is much larger than what it takes to train the sampler. Even worse, since this training time most likely grows with the complexity of the distribution (while the number of samples needed remains relatively constant) the training time factor may begin to dominate when calculting total ESS per time.&lt;/p&gt;
+
+
+
+
 
 
 
@@ -152,16 +173,17 @@ This lower bound seems to align with empirical results. We can further check whe
 &lt;figure  id=&#34;figure-acl-width-comparison&#34;&gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocorrelation for networks of different widths&#34; srcset=&#34;
-               /project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_a2f5f01fc4681a42e42bb245596af57c.png 400w,
-               /project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_84cef462722e5a09944c0c1df6e36ed1.png 760w,
-               /project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://evanbecker.me/project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_a2f5f01fc4681a42e42bb245596af57c.png&#34;
+               /project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_02ed4f964289d9cd61205d73db3e2a1f.webp 400w,
+               /project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_697bfaf252b33309340e4ba9fc2eed3c.webp 760w,
+               /project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://evbecker.github.io/project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_02ed4f964289d9cd61205d73db3e2a1f.webp&#34;
                width=&#34;386&#34;
                height=&#34;262&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
       Autocorrelation for networks of different widths
     &lt;/figcaption&gt;&lt;/figure&gt;
+
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -208,13 +230,17 @@ This lower bound seems to align with empirical results. We can further check whe
 
 
 
+
+
+
+
 &lt;figure  id=&#34;figure-acl-rotation-invariance-width10&#34;&gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocorrelation  for  the  width-10L2HMC sampler tested on rotated distri-butions&#34; srcset=&#34;
-               /project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_f927a5dae75b187fe2f67a1ee7285595.png 400w,
-               /project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_5792f4e310aad205b186eb934b6b4cfd.png 760w,
-               /project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://evanbecker.me/project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_f927a5dae75b187fe2f67a1ee7285595.png&#34;
+               /project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_915dadb1280f5cfff9bfe1a40d0547fd.webp 400w,
+               /project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_b9e75a1879d43c05108f5f9a4f72c393.webp 760w,
+               /project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://evbecker.github.io/project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_915dadb1280f5cfff9bfe1a40d0547fd.webp&#34;
                width=&#34;386&#34;
                height=&#34;262&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -235,19 +261,29 @@ This lower bound seems to align with empirical results. We can further check whe
 
 
 
+
+
+
+
+
 &lt;figure  id=&#34;figure-samples-degree6-width10&#34;&gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Plotting a single chain (yellow) ofour L2HMC width-10 sampler for 50timesteps on a 6 degree rotated distribu-tion&#34; srcset=&#34;
-               /project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_c94b5085e1ba7e90b620734b15399638.png 400w,
-               /project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_05f31c4fc96b064c397109d64b67aaa8.png 760w,
-               /project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://evanbecker.me/project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_c94b5085e1ba7e90b620734b15399638.png&#34;
+               /project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_dd86a967dc43956b592a71d2dc2f150e.webp 400w,
+               /project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_ab83be7643ae1206b6d10f85f25bb151.webp 760w,
+               /project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://evbecker.github.io/project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_dd86a967dc43956b592a71d2dc2f150e.webp&#34;
                width=&#34;377&#34;
                height=&#34;248&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
       Plotting a single chain (yellow) ofour L2HMC width-10 sampler for 50timesteps on a 6 degree rotated distribu-tion
-    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+
+
+
+
 
 
 
@@ -265,16 +301,17 @@ This lower bound seems to align with empirical results. We can further check whe
 &lt;figure  id=&#34;figure-acl-rotation-invariance-width20&#34;&gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocorrelation  for  the  width-20L2HMC sampler tested on rotated distri-butions&#34; srcset=&#34;
-               /project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_67ddfb1237f748596ddb1395c83aa596.png 400w,
-               /project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_f21ef3454e2f130f178bf942fda1851f.png 760w,
-               /project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://evanbecker.me/project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_67ddfb1237f748596ddb1395c83aa596.png&#34;
+               /project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_a40675d10c8ffc9799fd79205ea039a6.webp 400w,
+               /project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_b932ea94480d427034dc1f00e17fe0c0.webp 760w,
+               /project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://evbecker.github.io/project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_a40675d10c8ffc9799fd79205ea039a6.webp&#34;
                width=&#34;386&#34;
                height=&#34;262&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
       Autocorrelation  for  the  width-20L2HMC sampler tested on rotated distri-butions
     &lt;/figcaption&gt;&lt;/figure&gt;
+
 &lt;p&gt;As we increase the width and expressivity of our network, we see our operating range actually decreases (&lt;a href=&#34;#figure-acl-rotation-invariance-width20&#34;&gt;figure 7&lt;/a&gt;).  The autocorrelation of the width-20 sampler tested on the 8 degree rotated distribution is much worse than earlier, and is still not negligible after 300 samples. We include in table 2 the full list of expected sample size of samplers tested on the rotated distributions, where we see this trend continues.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;

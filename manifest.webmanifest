@@ -2,8 +2,8 @@
   "name": "evbecker",
   "short_name": "evbecker",
   "lang": "en-us",
-  "theme_color": "#707070",
-  "background_color": "#707070",
+  "theme_color": "#bbdefb",
+  "background_color": "#bbdefb",
   "icons": [{
     "src": "/media/icon_hu9d230ea63a194b55d9e6068e46b149b3_30806_192x192_fill_lanczos_center_3.png",
     "sizes": "192x192",
