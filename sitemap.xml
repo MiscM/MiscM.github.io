@@ -2,75 +2,115 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://evbecker.github.io/</loc>
+    <loc>https://evanbecker.me/talk/example-talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://evbecker.github.io/talk/example-talk/</loc>
+    <loc>https://evanbecker.me/event/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://evbecker.github.io/event/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+    <loc>https://evanbecker.me/tag/deep-learning/</loc>
+    <lastmod>2023-01-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://evbecker.github.io/project/kernelgan/</loc>
+    <loc>https://evanbecker.me/tag/local-stability/</loc>
+    <lastmod>2023-01-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://evanbecker.me/tag/ntk/</loc>
+    <lastmod>2023-01-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://evanbecker.me/project/</loc>
+    <lastmod>2023-01-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://evanbecker.me/tags/</loc>
+    <lastmod>2023-01-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://evanbecker.me/project/kernelgan/</loc>
+    <lastmod>2023-01-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://evanbecker.me/publication-type/1/</loc>
+    <lastmod>2023-02-01T15:28:39-08:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://evanbecker.me/publication/hung-conditioned-2022/</loc>
+    <lastmod>2023-02-01T15:28:39-08:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://evanbecker.me/publication_types/</loc>
+    <lastmod>2023-02-01T15:28:39-08:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://evanbecker.me/publication/</loc>
+    <lastmod>2023-02-01T15:28:39-08:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://evanbecker.me/</loc>
+    <lastmod>2022-10-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://evanbecker.me/publication/becker-instability-2022/</loc>
+    <lastmod>2023-02-01T15:28:38-08:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://evanbecker.me/tag/statistics/</loc>
     <lastmod>2021-04-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://evbecker.github.io/tag/deep-learning/</loc>
+    <loc>https://evanbecker.me/project/l2hmc/</loc>
     <lastmod>2021-04-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://evbecker.github.io/tag/ntk/</loc>
-    <lastmod>2021-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evbecker.github.io/project/</loc>
-    <lastmod>2021-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evbecker.github.io/tag/statistics/</loc>
-    <lastmod>2021-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evbecker.github.io/tags/</loc>
-    <lastmod>2021-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evbecker.github.io/project/l2hmc/</loc>
-    <lastmod>2021-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evbecker.github.io/tag/academic/</loc>
+    <loc>https://evanbecker.me/tag/academic/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://evbecker.github.io/categories/</loc>
+    <loc>https://evanbecker.me/categories/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://evbecker.github.io/category/demo/</loc>
+    <loc>https://evanbecker.me/category/demo/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://evbecker.github.io/post/</loc>
+    <loc>https://evanbecker.me/post/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://evbecker.github.io/post/getting-started/</loc>
+    <loc>https://evanbecker.me/post/getting-started/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://evbecker.github.io/tag/%E5%BC%80%E6%BA%90/</loc>
+    <loc>https://evanbecker.me/tag/%E5%BC%80%E6%BA%90/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://evbecker.github.io/category/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://evanbecker.me/category/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://evbecker.github.io/slides/</loc>
+    <loc>https://evanbecker.me/post/writing-technical-content/</loc>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://evanbecker.me/post/jupyter/</loc>
+    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://evanbecker.me/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://evbecker.github.io/slides/example/</loc>
+    <loc>https://evanbecker.me/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://evbecker.github.io/publication-type/1/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evbecker.github.io/publication/example/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evbecker.github.io/publication_types/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evbecker.github.io/publication/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evbecker.github.io/admin/</loc>
+    <loc>https://evanbecker.me/admin/</loc>
+    <changefreq>weekly</changefreq>
   </url>
 </urlset>

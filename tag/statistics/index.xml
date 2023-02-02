@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Statistics | evbecker</title>
-    <link>https://evbecker.github.io/tag/statistics/</link>
-      <atom:link href="https://evbecker.github.io/tag/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <title>Statistics | Evan Becker</title>
+    <link>https://evanbecker.me/tag/statistics/</link>
+      <atom:link href="https://evanbecker.me/tag/statistics/index.xml" rel="self" type="application/rss+xml" />
     <description>Statistics</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2023 Evan Becker</copyright><lastBuildDate>Tue, 27 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 27 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://evbecker.github.io/media/icon_hu9d230ea63a194b55d9e6068e46b149b3_30806_512x512_fill_lanczos_center_3.png</url>
+      <url>https://evanbecker.me/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Statistics</title>
-      <link>https://evbecker.github.io/tag/statistics/</link>
+      <link>https://evanbecker.me/tag/statistics/</link>
     </image>
     
     <item>
       <title>Taking the L2HMC Sampler for a &#34;Spin&#34;</title>
-      <link>https://evbecker.github.io/project/l2hmc/</link>
+      <link>https://evanbecker.me/project/l2hmc/</link>
       <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://evbecker.github.io/project/l2hmc/</guid>
+      <guid>https://evanbecker.me/project/l2hmc/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Finding sampling algorithms that can efficiently cover ill-conditioned distributions is a difficult challenge, even for popular methods such as Hamiltonian Monte Carlo. Recently, the L2HMC method demonstrated low autocorrelation and high expected sample size over various ill-conditioned energy landscapes (Levy et al. 2018). By training deep neural networks to maximize the expected squared jump distance, the MCMC kernel can more efficiently explore the distribution. While promising, the initial training time of their sampler is not accounted for and could pose problems in practice when applying L2HMC to new distributions. In this project, I set out to analyze the training time and performance of different neural networks on strongly correlated gaussian distributions. I also examine whether one L2HMC sampler can be used to sample from multiple similar distributions.&lt;/p&gt;
 &lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
@@ -65,7 +65,7 @@ ESJD := \sum_{\xi&amp;rsquo;} P(\xi&amp;rsquo;|\xi)\lVert \xi_x-\xi_x&amp;rsquo;
                /project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_b5bba3ba4a612ba49dbd459b3113d40c.webp 400w,
                /project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_bec6ff9d6ed3feba47b9c8301664e2f6.webp 760w,
                /project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://evbecker.github.io/project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_b5bba3ba4a612ba49dbd459b3113d40c.webp&#34;
+               src=&#34;https://evanbecker.me/project/l2hmc/rotated-gaussians_hu3f1cbac322b3875ad8ee67b34779d165_15807_b5bba3ba4a612ba49dbd459b3113d40c.webp&#34;
                width=&#34;377&#34;
                height=&#34;264&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -111,7 +111,7 @@ This lower bound seems to align with empirical results. We can further check whe
                /project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_023b8445e54ec022556f204139c500fb.webp 400w,
                /project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_dede1cf3ac862363d5f0c4ab457ad747.webp 760w,
                /project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://evbecker.github.io/project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_023b8445e54ec022556f204139c500fb.webp&#34;
+               src=&#34;https://evanbecker.me/project/l2hmc/loss-width-comparison_hucf12dcb5bc7f9a68b0b87a2e05d0907d_23798_023b8445e54ec022556f204139c500fb.webp&#34;
                width=&#34;420&#34;
                height=&#34;262&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -143,7 +143,7 @@ This lower bound seems to align with empirical results. We can further check whe
                /project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_54eef4a2fae2bdd9456e5e738cbd8ef5.webp 400w,
                /project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_c37c05686b6e84079fee050583dff0e5.webp 760w,
                /project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://evbecker.github.io/project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_54eef4a2fae2bdd9456e5e738cbd8ef5.webp&#34;
+               src=&#34;https://evanbecker.me/project/l2hmc/acceptance-width-comparison_hua8a409079615f9883905033ca3690d6d_24257_54eef4a2fae2bdd9456e5e738cbd8ef5.webp&#34;
                width=&#34;396&#34;
                height=&#34;262&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -176,7 +176,7 @@ This lower bound seems to align with empirical results. We can further check whe
                /project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_02ed4f964289d9cd61205d73db3e2a1f.webp 400w,
                /project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_697bfaf252b33309340e4ba9fc2eed3c.webp 760w,
                /project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://evbecker.github.io/project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_02ed4f964289d9cd61205d73db3e2a1f.webp&#34;
+               src=&#34;https://evanbecker.me/project/l2hmc/acl-width-comparison_hudcfaefb1070b7aec019f60cecad77fb8_17024_02ed4f964289d9cd61205d73db3e2a1f.webp&#34;
                width=&#34;386&#34;
                height=&#34;262&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -240,7 +240,7 @@ This lower bound seems to align with empirical results. We can further check whe
                /project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_915dadb1280f5cfff9bfe1a40d0547fd.webp 400w,
                /project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_b9e75a1879d43c05108f5f9a4f72c393.webp 760w,
                /project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://evbecker.github.io/project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_915dadb1280f5cfff9bfe1a40d0547fd.webp&#34;
+               src=&#34;https://evanbecker.me/project/l2hmc/acl-rotation-invariance-width10_huefb2b8b1f1279126c5d32db62e15e73c_21916_915dadb1280f5cfff9bfe1a40d0547fd.webp&#34;
                width=&#34;386&#34;
                height=&#34;262&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -272,7 +272,7 @@ This lower bound seems to align with empirical results. We can further check whe
                /project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_dd86a967dc43956b592a71d2dc2f150e.webp 400w,
                /project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_ab83be7643ae1206b6d10f85f25bb151.webp 760w,
                /project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://evbecker.github.io/project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_dd86a967dc43956b592a71d2dc2f150e.webp&#34;
+               src=&#34;https://evanbecker.me/project/l2hmc/samples-degree6-width10_hub5692c2c8401245d628f28eadc755f2d_9040_dd86a967dc43956b592a71d2dc2f150e.webp&#34;
                width=&#34;377&#34;
                height=&#34;248&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -304,7 +304,7 @@ This lower bound seems to align with empirical results. We can further check whe
                /project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_a40675d10c8ffc9799fd79205ea039a6.webp 400w,
                /project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_b932ea94480d427034dc1f00e17fe0c0.webp 760w,
                /project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://evbecker.github.io/project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_a40675d10c8ffc9799fd79205ea039a6.webp&#34;
+               src=&#34;https://evanbecker.me/project/l2hmc/acl-rotation-invariance-width20_hueb72b700c6180a15fd0f4294f1ed41fb_24444_a40675d10c8ffc9799fd79205ea039a6.webp&#34;
                width=&#34;386&#34;
                height=&#34;262&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;

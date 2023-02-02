@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: https://evbecker.github.io/sitemap.xml
+Sitemap: https://evanbecker.me/sitemap.xml
