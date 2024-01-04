@@ -5,26 +5,34 @@
     <link>https://evanbecker.me/publication-type/1/</link>
       <atom:link href="https://evanbecker.me/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://evanbecker.me/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://evanbecker.me/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>1</title>
       <link>https://evanbecker.me/publication-type/1/</link>
     </image>
     
     <item>
+      <title>High Probability Bounds for Stochastic Continuous Submodular Maximization</title>
+      <link>https://evanbecker.me/publication/becker-2023-high/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://evanbecker.me/publication/becker-2023-high/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Conditioned Spatial Downscaling of Climate Variables</title>
-      <link>https://evanbecker.me/publication/hung-conditioned-2022/</link>
+      <link>https://evanbecker.me/publication/hung-2022-conditioned/</link>
       <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://evanbecker.me/publication/hung-conditioned-2022/</guid>
+      <guid>https://evanbecker.me/publication/hung-2022-conditioned/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Instability and Local Minima in GAN Training with Kernel Discriminators</title>
-      <link>https://evanbecker.me/publication/becker-instability-2022/</link>
+      <link>https://evanbecker.me/publication/becker-2022-instability/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://evanbecker.me/publication/becker-instability-2022/</guid>
+      <guid>https://evanbecker.me/publication/becker-2022-instability/</guid>
       <description></description>
     </item>
     

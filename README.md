@@ -1,2 +1,2 @@
 # evbecker.github.io
-My work in progress web page
+My academic webpage, published at evanbecker.me

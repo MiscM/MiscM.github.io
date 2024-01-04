@@ -7,7 +7,7 @@
     <description>Evan Becker</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://evanbecker.me/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://evanbecker.me/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Evan Becker</title>
       <link>https://evanbecker.me/</link>
     </image>
@@ -102,18 +102,34 @@
     </item>
     
     <item>
+      <title>High Probability Bounds for Stochastic Continuous Submodular Maximization</title>
+      <link>https://evanbecker.me/publication/becker-2023-high/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://evanbecker.me/publication/becker-2023-high/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Local Convergence of Gradient Descent-Ascent for Training Generative Adversarial Networks</title>
+      <link>https://evanbecker.me/publication/becker-2023-local/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://evanbecker.me/publication/becker-2023-local/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Conditioned Spatial Downscaling of Climate Variables</title>
-      <link>https://evanbecker.me/publication/hung-conditioned-2022/</link>
+      <link>https://evanbecker.me/publication/hung-2022-conditioned/</link>
       <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://evanbecker.me/publication/hung-conditioned-2022/</guid>
+      <guid>https://evanbecker.me/publication/hung-2022-conditioned/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Instability and Local Minima in GAN Training with Kernel Discriminators</title>
-      <link>https://evanbecker.me/publication/becker-instability-2022/</link>
+      <link>https://evanbecker.me/publication/becker-2022-instability/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://evanbecker.me/publication/becker-instability-2022/</guid>
+      <guid>https://evanbecker.me/publication/becker-2022-instability/</guid>
       <description></description>
     </item>
     
@@ -650,7 +666,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-249876153&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-413852967&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -660,7 +676,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-249876153&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-413852967&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
